@@ -478,7 +478,7 @@ class SignupPage extends React.Component {
             {
                 type: 'email',
                 value: state.email,
-                placeholder: t('Email Placeholder'),
+                placeholder: t('jamie@example.com'),
                 label: t('Email'),
                 name: 'email',
                 required: true,
@@ -492,7 +492,7 @@ class SignupPage extends React.Component {
             fields.unshift({
                 type: 'text',
                 value: state.name,
-                placeholder: t('Name Placeholder'),
+                placeholder: t('Jamie Larson'),
                 label: t('Name'),
                 name: 'name',
                 required: true,
