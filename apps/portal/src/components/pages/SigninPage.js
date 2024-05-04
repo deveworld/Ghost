@@ -65,7 +65,7 @@ export default class SigninPage extends React.Component {
             {
                 type: 'email',
                 value: state.email,
-                placeholder: 'jamie@example.com',
+                placeholder: t('Email Placeholder'),
                 label: t('Email'),
                 name: 'email',
                 required: true,
