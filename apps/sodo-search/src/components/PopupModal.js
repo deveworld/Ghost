@@ -71,7 +71,7 @@ class PopupContent extends React.Component {
 }
 
 function SearchBox() {
-    const {searchValue, dispatch, inputRef} = useContext(AppContext);
+    const {searchValue, dispatch, inputRef, t} = useContext(AppContext);
     const containerRef = useRef(null);
     useEffect(() => {
         setTimeout(() => {
@@ -117,7 +117,7 @@ function SearchBox() {
                     }
                 }}
                 className='grow -my-5 py-5 -ml-3 pl-3 text-[1.65rem] focus-visible:outline-none placeholder:text-gray-400 outline-none truncate'
-                placeholder='Search posts, tags and authors'
+                placeholder=t('Search Placeholder')
             />
             <Loading />
             <CancelButton />
